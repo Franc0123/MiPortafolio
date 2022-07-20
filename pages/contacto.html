@@ -6,70 +6,124 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina Web!</title>
     <link rel="stylesheet" href="../css/style.css">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <p>FrancoCss</p>
-            <ul class="menu-items">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../pages/sobremi.html">Sobre mi</a></li>
-                <li><a href="../pages/ayuda.html">Ayuda</a></li>
-                <li><a href="../pages/contacto.html">contacto</a></li>
-                <li><a href="../pages/mas.html">Mas</a></li>
+    <nav class="navbar  navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand fs-3 fw-bold color" href="#">Franco<span>Css</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse color" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item fs-5 text-capitalize text-capitalize">
+                <a class="nav-link" aria-current="page" href="../index.html">home</a>
+              </li>
+              <li class="nav-item fs-5 text-capitalize">
+                <a class="nav-link text-capitalize" href="../pages/sobremi.html">sobre mi</a>
+              </li>
+              <li class="nav-item fs-5 color4 text-capitalize">
+                <a class="nav-link text-capitalize active fw-bold color-active" href="#">contacto</a>
+              </li>
+              <li class="nav-item fs-5 text-capitalize">
+                <a class="nav-link text-capitalize" href="../pages/tecnologias.html">tecnologias</a>
+              </li>
+              <li class="nav-item fs-5 text-capitalize">
+                <a class="nav-link text-capitalize" href="../pages/mas.html">mas</a>
+              </li>
             </ul>
-        </nav>
-    </header>
+          </div>
+        </div>
+      </nav>
 
-    <form action="" class="form-contact">
-        <fieldset>
-            <legend>datos personales : </legend>
-            <label for="nombre">nombre</label>
-            <input type="text" name="nombre" id="nombre" placeholder="ingrese tu nombre" required>
-            <br>
-            <br>
-            <label for="apellido">apellido</label>
-            <input type="text" name="apellido" id="apellido" placeholder="ingrese tu nombre" required>
-            <br>
-            <br>
-            <label for="clave">Contraseña</label>
-            <input type="text" name="clave" id="nomclavere" placeholder="ingrese tu nombre" required>      
-            <br>
-            <br>
-            <label for="correo">correo</label>
-            <input type="email" name="correo" id="correo" placeholder="ingrese tu nombre" required>
-            <br>
-            <br>
-            <label for="num">numero de telefono</label>
-            <input type="number" name="number" id="number" placeholder="ingrese tu nombre" required>
-            <!-- checkbox -->
-            <br>
-            <!-- textarea -->
-            <label for="comentario">Comentario</label>
-            <br> <br>
-            <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="ingresa un comentario"></textarea>
-            <br>
-            <br>
-            <input type="submit" value="Enviar formulario">
-            <input type="reset" value="Limpiar formulario">
-        </fieldset>
-    </form>
-
-    <footer class="footer">
-        <div class="footer__flex">
-            <div>
-                <h4 class="footer__titulo">Mi sitio</h4>
-                <ul class="footer__menu">
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="../pages/sobremi.html">Sobre mi</a></li>
-                    <li><a href="../pages/ayuda.html">Ayuda</a></li>
-                    <li><a href="../pages/contacto.html">contacto</a></li>
-                    <li><a href="../pages/mas.html">Mas</a></li>
-                </ul>
+      <section class="section4">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <h1 class="text-center text-capitalize text-white text-fluid">contacto</h1>
+                </div>
             </div>
         </div>
-        <p>Gougeon Franco 2022, Todos los derechos reservados</p>
-        </footer>
+     </section>
+      
+    <section class="section3">
+       <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="shadow-lg p-3 mb-5 mt-4 bg-body rounded">
+                        <form action="" class="row g-3 d-flex flex-column align-items-center">
+                            <div class="col-md-3 .background">
+                                <label for="nombre" class="form-label">nombre</label>
+                                <input id="nombre" type="text" value="nombre" class="form-control">
+                            </div>
+                            <div class="col-md-3">
+                                <label for="apellido" class="form-label">apellido</label>
+                                <input id="apellido" type="text" value="nombre" class="form-control">
+                            </div>
+                            <div class="col-md-3">
+                                <label for="pais">pais</label>
+                                <select name="pais" id="pais" class="form-select">
+                                    <option selected disabled value="">seleccionar...</option>
+                                    <option value="">Argentina</option>
+                                    <option value="">Mexico</option>
+                                    <option value="">Estados Unidos</option>
+                                    <option value="">Brasil</option>
+                                    <option value="">Chile</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-warning fw-bold text-center">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+       </div>
+    </section>
+
+    
+
+    <footer class="bg-dark">
+        <div class="container">
+            <div class="row p-5 text-white mt-5 row1">
+                <div class="col">
+                    <h1>Franco<span>Css</span></h1>
+                    <p class="mt-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus suscipit omnis molestiae veniam officia amet quos modi deserunt totam cum?</p>
+                </div>
+                <div class="col">
+                    <h1>Cursos</h1>
+                    <p>Html</p>
+                    <p>Css</p>
+                    <p>JavaScript</p>
+                    <p>React</p>
+                    <p>Python</p>
+                </div>
+                <div class="col">
+                    <h1>Links</h1>
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                      <li class="nav-item text-capitalize">
+                        <a class="nav-link active" aria-current="page" href="../index.html">home</a>
+                      </li>
+                      <li class="nav-item text-capitalize">
+                        <a class="nav-link" href="../pages/sobremi.html">sobre mi</a>
+                      </li>
+                      <li class="nav-item text-capitalize">
+                        <a class="nav-link" href="#">contacto</a>
+                      </li>
+                      <li class="nav-item text-capitalize">
+                        <a class="nav-link" href="../pages/tecnologias.html">tecnologias</a>
+                      </li>
+                      <li class="nav-item text-capitalize">
+                        <a class="nav-link" href="../pages/mas.html">mas</a>
+                      </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
 
