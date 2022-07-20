@@ -7,11 +7,8 @@
 body {
     font-family: 'Gantari', sans-serif;
     font-family: 'Josefin Sans', sans-serif;
-    font-family: 'Kantumruy Pro', sans-serif;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Nunito Sans', sans-serif;
-    font-family: 'Open Sans', sans-serif;
-    font-family: 'Poppins', sans-serif;
+
+
 }
 
 /* navegacion  */
@@ -28,6 +25,18 @@ nav {
 
 nav ul li {
     margin: 15px;
+    transition: all ease-in .3s;
+}
+
+.navbar .container .transition .navbar-nav li:hover {
+    background-color: #ff4500;
+}
+
+.navbar .container .transition .navbar-nav li.active {
+    background-color: #ff4500;
+}
+.navbar .container .transition .navbar-nav li a.active {
+    color: #000;
 }
 
 /* main contenido  */
@@ -65,11 +74,11 @@ section {
     height: calc(100vh - 100px - 300px);
 }
 
+/* pagina sobre mi  */
+
 .section2 {
     height: calc(100vh - 100px - 10px);
 }
-
-/* pagina sobre mi  */
 
 .sobre__mi {
     height: 600px;
@@ -90,6 +99,88 @@ section {
     line-height: 2;
     font-size: 20px;
 }
+
+/* pagina contacto  */
+
+.section3 {
+    height: calc(100vh - 100px - -10px);
+}
+
+.section3 .row .col {
+    margin-top: 10%;
+}
+
+/* pagina ayuda  */
+
+.section4 {
+    height: calc(100vh - 100px - -90px);
+}
+
+.section4{
+    height: 500px;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)
+    )
+    ,url(../img/header.webp);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.section4 .container-fluid .row .col h1 {
+    cursor: pointer;
+}
+
+.informacion .row{ 
+    height: 400px;
+}
+
+
+/* pagina mas  */
+
+
+.titulo {
+    height: calc(100vh - 100px - 400px);
+}
+
+.buttons {
+    height: 550px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .buttons .row .col ul {
+    display: flex;
+    margin-right: 10px;
+    margin-top: 50px;
+  }
+  
+  
+  .buttons a {
+    margin: 30px;
+    text-decoration: none;
+    font-size: 28px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background: #060707;
+    color: #ff4500;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+    transition: all .4s ease-in-out;
+  }
+  
+    .buttons a:hover {
+    transform: scale(1.2);
+  }
 
 
 /* media responsive */
@@ -120,13 +211,40 @@ section {
         flex-direction: column;
     }
 
+    .navbar .container .transition .navbar-nav li:hover {
+        background: none;
+    }
+
+    .navbar .container .transition .navbar-nav li.active {
+        background: none;
+    }
+
+    .navbar .container .transition .navbar-nav li a.active {
+        color: #000;
+    }
+
     
+
+    /* pagina tecnologias  */
+    
+    .color ul li a{
+        font-weight: none;
+        color: #fff;
+    }
+
+    .color ul .color4 .color-active {
+        color: #fff;
+    }
 
     
 }
 
 @media screen and (max-width:768px) {
     .row1 {
+        flex-direction: column;
+    }
+
+    .buttons .row .col ul {
         flex-direction: column;
     }
 
@@ -141,7 +259,6 @@ section {
     .navbar-nav li {
         margin-bottom: 1px;
     }
-
-    
 }
+
 

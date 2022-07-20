@@ -7,11 +7,8 @@
 body {
     font-family: 'Gantari', sans-serif;
     font-family: 'Josefin Sans', sans-serif;
-    font-family: 'Kantumruy Pro', sans-serif;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Nunito Sans', sans-serif;
-    font-family: 'Open Sans', sans-serif;
-    font-family: 'Poppins', sans-serif;
+
+
 }
 
 /* navegacion  */
@@ -28,6 +25,18 @@ nav {
 
 nav ul li {
     margin: 15px;
+    transition: all ease-in .3s;
+}
+
+.navbar .container .transition .navbar-nav li:hover {
+    background-color: #ff4500;
+}
+
+.navbar .container .transition .navbar-nav li.active {
+    background-color: #ff4500;
+}
+.navbar .container .transition .navbar-nav li a.active {
+    color: #000;
 }
 
 /* main contenido  */
@@ -200,6 +209,18 @@ section {
         margin-top: 5%;
         max-width: 90%;
         flex-direction: column;
+    }
+
+    .navbar .container .transition .navbar-nav li:hover {
+        background: none;
+    }
+
+    .navbar .container .transition .navbar-nav li.active {
+        background: none;
+    }
+
+    .navbar .container .transition .navbar-nav li a.active {
+        color: #000;
     }
 
     
