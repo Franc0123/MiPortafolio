@@ -39,6 +39,10 @@ nav ul li {
     color: #000;
 }
 
+.navbar .container .transition .navbar-nav li a.active2 {
+    color: #000;
+}
+
 /* main contenido  */
 
 .main-content-left {
