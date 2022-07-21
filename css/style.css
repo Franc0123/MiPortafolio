@@ -211,6 +211,8 @@ section {
         flex-direction: column;
     }
 
+    /* navegacion general  */
+
     .navbar .container .transition .navbar-nav li:hover {
         background: none;
     }
@@ -219,8 +221,12 @@ section {
         background: none;
     }
 
-    .navbar .container .transition .navbar-nav li a.active {
+    .navbar .container .transition .navbar-nav li a.active2 {
         color: #000;
+    }
+
+    .navbar .container .transition .navbar-nav li a.active {
+        color: #fff;
     }
 
     
